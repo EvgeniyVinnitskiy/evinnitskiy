@@ -49,8 +49,7 @@ public class Triangle {
 	double lengtABSide = Triangle.lengthSide(this.a, this.b);
 	double lengtBCSide = Triangle.lengthSide(this.b, this.c);
 	double lengtCASide = Triangle.lengthSide(this.c, this.a);
-	double halfPerimeter = (Triangle.lengthSide(this.a, this.b) + Triangle.lengthSide(this.b, this.c)
-	    + Triangle.lengthSide(this.c, this.a)) / 2;
+	double halfPerimeter = (lengtABSide + lengtBCSide + lengtCASide) / 2;
 	if (lengtABSide < lengtBCSide +  lengtCASide && lengtBCSide < lengtABSide + lengtCASide
 		&& lengtCASide < lengtABSide + lengtBCSide) {
 	    areaTriangle = Math.sqrt(halfPerimeter * (halfPerimeter - lengtABSide)
