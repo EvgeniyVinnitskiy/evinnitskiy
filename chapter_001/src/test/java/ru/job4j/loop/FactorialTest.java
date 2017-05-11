@@ -18,8 +18,7 @@ public class FactorialTest {
     @Test
     public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
        Factorial factorial = new Factorial();
-	   factorial.calc(5);
-	   int result = factorial.calc();
+	   int result = factorial.calc(5);
        int expected = 120;
        assertThat(result, is(expected));
     }
@@ -29,8 +28,7 @@ public class FactorialTest {
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
        Factorial factorial = new Factorial();
-	   factorial.calc(0);
-	   int result = factorial.calc();
+	   int result = factorial.calc(0);
        int expected = 1;
        assertThat(result, is(expected));
     }
