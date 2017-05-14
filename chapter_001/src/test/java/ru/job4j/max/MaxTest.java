@@ -10,15 +10,14 @@ import static org.junit.Assert.assertThat;
 * @version $2.0$
 * @since 09.05.2017
 */
-public class Max {
+public class MaxTest {
 	/**
 	* Test Max.
 	*/
     @Test
     public void whenMaxSevenAndTreeThenSeven() {
-        Max maxi = new Max();
-        maxi.max(7, 3);
-        int result = maxi.getResult();
+        Max maximum = new Max();
+        int result =  maximum.max(7, 3);
         int expected = 7;
         assertThat(result, is(expected));
     }
@@ -27,9 +26,8 @@ public class Max {
 	*/
     @Test
     public void whenMaxThreeAndFiveAndNineThenNine() {
-        Max maxi = new Max();
-        maxi.max(3, 5, 9);
-        int result = maxi.getResult();
+        Max maximum = new Max();
+        int result = maximum.max(3, 5, 9);
         int expected = 9;
         assertThat(result, is(expected));
     }
